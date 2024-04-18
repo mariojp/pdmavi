@@ -8,16 +8,57 @@
     tools:context=".SegundaActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/activity2_titulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="SEGUNDA ACTIVITY"
+        android:text="CONTATO"
         android:textSize="34sp" />
 
-    <Button
-        android:id="@+id/button2"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/activity2_nome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Voltar" />
+        android:hint="Nome">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/activity2_campo_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="hint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/activity2_telefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Telefone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/activity2_campo_telefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="hint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/activity2_voltar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Voltar" />
+
+        <Button
+            android:id="@+id/activity2_salvar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Salvar" />
+    </LinearLayout>
+
 </LinearLayout>
